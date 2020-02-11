@@ -4,9 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Beth+Ellen|Homemade+Apple&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Document</title>
   </head>
   <body>
-    <h1>John</h1>
+    <h1>Hogwarts Student List</h1>
+    <template>
+      <article>
+        <h2 class="fullname"></h2>
+        <h2 class="house"></h2>
+      </article>
+    </template>
+
+    <div id="popup">
+      <button class="close">X</button>
+      <section class="content">
+        <h2 class="fullname"></h2>
+        <h2 class="house"></h2>
+      </section>
+    </div>
+    <section class="liste"></section>
+
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,3 +1,94 @@
 body {
-  background-color: grey;
+  background-color: #b9c4ad;
+}
+
+@media only screen and (min-width: 500px) {
+  #splash {
+    width: 100vw;
+    height: 36.25vw;
+    background-position: 40% 50%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #spalsh {
+    width: 100vw;
+    height: 86.25vw;
+    background-position: 50% 50%;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  font-family: "Beth Ellen", cursive;
+}
+
+h2 {
+  color: dimgray;
+  font-family: "Homemade Apple", cursive;
+}
+
+.liste {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(1, 1fr);
+  max-width: 1080px;
+  margin: 0 auto;
+  /*color: #e2e8e5;*/
+}
+
+article:nth-child(even) {
+  background-color: #e5e4e0;
+}
+
+article:nth-child(odd) {
+  background-color: #e5e4e0;
+}
+
+@media screen and (min-width: 600px) {
+  .liste {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .liste {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* POPUP BEGINS */
+#popup {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  overflow: scroll;
+}
+
+.content {
+  font-family: "Lato", sans-serif;
+  width: 38vw;
+  min-height: 40vh;
+  background-color: white;
+  margin: 4rem auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.close {
+  position: fixed;
+  right: 389px;
+  top: 80px;
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  border: none;
+  color: black;
+  background-color: none;
 }
